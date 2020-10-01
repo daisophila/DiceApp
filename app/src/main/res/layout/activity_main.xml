@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="주사위 개수를 선택해주세요!"
-        android:textSize="24dp" />
+        android:textSize="24sp" />
 
     <RadioGroup
         android:id="@+id/rg"
@@ -25,16 +25,24 @@
             android:id="@+id/radioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="주사위 1개"
-            android:textSize="24dp" />
+            android:text="@string/_1"
+            android:textSize="24sp" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="주사위 2개"
-            android:textSize="24dp" />
+            android:text="@string/_2"
+            android:textSize="24sp" />
     </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주사위 던지기"
+        android:textSize="24sp"/>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -43,13 +51,15 @@
             android:id="@+id/di1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp" />
+            android:src="@drawable/d1"
+            tools:ignore="ContentDescription" />
 
         <ImageView
             android:id="@+id/di2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="240dp" />
+            android:src="@drawable/d1"
+            tools:ignore="ContentDescription" />
 
     </LinearLayout>
 </LinearLayout>

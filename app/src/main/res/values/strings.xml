@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">DiceApp</string>
+    <string name="_1">주사위 1개</string>
+    <string name="_2">주사위 2개</string>
 </resources>

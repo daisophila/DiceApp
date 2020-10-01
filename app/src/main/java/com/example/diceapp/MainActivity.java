@@ -12,7 +12,7 @@ import android.widget.RadioGroup;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
-    private RadioGroup cd;
+    RadioGroup cd;
     RadioButton d;
     Button b;
     int w=1;
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         cd=findViewById(R.id.rg);
         d.findViewById(R.id.radioButton);
-        b.findViewById(R.id.bottom);
+        b.findViewById(R.id.button);
         di1.findViewById(R.id.di1);
         di2.findViewById(R.id.di2);
 
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 int dn1, dn2;
 
                 if (w==1) {
-                    dn1=r1.nextInt(6)+1;
+                    dn1=r1.nextInt(4)+1;
                     di2.setVisibility(View.INVISIBLE);
                     switch (dn1) {
                         case 1:
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                         case 4:
                             di1.setImageResource(R.drawable.d4);
                             break;
-                        case 5:
+                       case 5:
                             di1.setImageResource(R.drawable.d5);
                             break;
                         case 6:
